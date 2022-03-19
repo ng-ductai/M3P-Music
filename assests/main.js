@@ -27,7 +27,7 @@ const musics =[
         number: '02',
         file: 'ccyld.mp3',
         title: 'Có chắc yêu là đây',
-        artist: 'Sơn Tùng MTP',
+        artist: 'Sơn Tùng M-TP',
         time: '3:35',
         active:false,
 
@@ -47,7 +47,7 @@ const musics =[
         number: '04',
         file: 'nnca.mp3',
         title: 'Nơi này có anh',
-        artist: 'Sơn Tùng MTP',
+        artist: 'Sơn Tùng M-TP',
         time: '4:37',
         active:false,
 

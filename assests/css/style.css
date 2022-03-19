@@ -689,6 +689,7 @@ html::-webkit-scrollbar-thumb {
 #container.dark-theme .sidebar-favorite__title,
 #container.dark-theme .sidebar-shortcuts__title,
 #container.dark-theme .sidebar-album__suggest h4,
+#container.dark-theme .sidebar-album__suggest p,
 #container.dark-theme .main-trend__title,
 #container.dark-theme .my-playlist__head-title,
 #container.dark-theme .logo span {
