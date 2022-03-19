@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>M3P</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="container" >
+        <!--NAVBAR-->
+        <div id="navbar">
+            <div class="navbar-container">
+                <header class="navbar-container__header">
+                    <span class="header-check">
+                        <span class="header-check__ball"></span>
+                    </span>
+                    <i class="fas fa-times mb-navbar"></i>
+                </header>
+                
+                <div class="navbar-container__logo">
+                    <i class="fas fa-compact-disc"></i>
+                    <span class="logo-text">M3P</span>
+                </div>
+
+                <div class="navbar-container__content">
+                    <nav>
+                        <li class="content-icon">
+                            <a href="#"><i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="content-icon">
+                            <a href="#"><i class="fas fa-chart-line"></i>Trend</a>
+                        </li>
+                        <li class="content-icon">
+                            <a href="#"><i class="fas fa-compass"></i>Feed</a>
+                        </li>
+                    </nav>
+
+                    <nav>   
+                        <p class=" content-title">Discover</p>
+                        <ul>
+                            <li class="content-icon">
+                                <a href="#"><i class="far fa-newspaper"></i>New and Explore</a>
+                            </li>
+                            <li class="content-icon">
+                                <a href="#"><i class="far fa-calendar-alt"></i>Events</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <p class=" content-title">Your Collection</p>
+                        <ul>
+                            <li class="content-icon">
+                                <a href="#"><i class="fas fa-heart"></i>Favorite Songs</a>
+                            </li>
+                            <li class="content-icon">
+                                <a href="#"><i class="fas fa-users"></i>Artist</a>
+                            </li>
+                            <li class="content-icon">
+                                <a href="#"><i class="fas fa-compact-disc"></i>Albums</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="navbar-user">
+                <div class="navbar-user__container">
+                    <div class="user-avt">
+                        <img src="./assests/img/User.jpg" alt="">
+                    </div>
+                    <div class="user-name">Nguyễn Đức Tài</div>
+                    <a href=""><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+       
+        <!--MAIN-->
+        <div id="main" >
+            <header class="main-header">
+                <nav class="main-header__nav">
+                    <i class="fas fa-bars bars-left"></i>
+                </nav>
+                <div class="main-search__form">
+                    <i class="fas fa-search search-btn"></i>
+                    <input type="text" class="search-input" placeholder="Search for artist, songs.....">
+                </div>
+                <i class="fas fa-bars bars-right"></i>
+            </header>
+
+            <div class="main-trend">
+                <div class="main-trend__title">Trending</div>
+                <div class="main-trend__more btn-hover">
+                    More
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="main-banner">
+                <h4 class="main-banner__des">On Top Of The World</h4>
+                <div class="main-banner__btn">
+                    <button class="play-btn">PLAY</button>
+                    <button class="follow-btn">FOLLOW</button>
+                </div>
+            </div>
+
+            <div class="my-playlist">
+                <div class="my-playlist__head">
+                    <div class="my-playlist__head-title">My Playlist</div>   
+                    <div class="my-playlist__head-more btn-hover">
+                        More
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    
+                </div>
+                <div class="playlist-list">
+                    <div class="playlist playlist-list__item">
+                        <p class="item__number">#</p>
+                        <p class="item__title">Title</p>
+                        <p class="item__artist">Artist</p>
+                        <p class="item__time">Time</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="play">
+                <div class="play-control">
+                    <div class="play-control__act">
+                        <i class="far fa-heart" id='heart'></i>
+                    </div>
+                    <div class="play-control__main">
+                        <i class="fas fa-redo-alt play-repeat"></i>
+                        <i class="fas fa-fast-backward play-backward main-icon"></i>
+                        <span class="play-inner">
+                            <i class="fas fa-play-circle play-icon main-icon main-icon--big"></i>
+                        </span>
+                        <i class="fas fa-fast-forward play-forward main-icon"></i>
+                        <i class="fas fa-random shuffle-song"></i>
+                    </div>
+                    <div class="play-control__volume">
+                        <i class="fas fa-volume-mute"></i>
+                        <input type="range" id="volume" class="volume" value ="1" min = "0" max="1" step="0.1">           
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                </div>
+                <div class="play-seekbar">
+                    <div class="timer__left">0:00</div>
+                    <input type="range" name="range" id="range" class="range" />
+                    <audio src="./assests/mp3/ntt.mp3" id="song"></audio>
+                    <div class="timer__right">3.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            ====================SIDE-BAR=========================
+        -->
+        <div id="sidebar">
+            <div class="sidebar-shortcuts">
+                <p class="sidebar-shortcuts__title">Shortcuts
+                    <i class="fas fa-times mb-sidebar"></i>
+                </p>
+                <div class="sidebar-shortcuts__items">
+                    <span class="sidebar-shortcuts__item">Chill
+                        <img src="./assests/img/snow.png" alt="">
+                    </span>
+                    <span class="sidebar-shortcuts__item">Hot
+                        <img src="./assests/img/star.png" alt="">
+                    </span>
+                    <span class="sidebar-shortcuts__item">Piano
+                        <img src="./assests/img/piano.png" alt="">
+                    </span>
+                    <span class="sidebar-shortcuts__item">Acoustic
+                        <img src="./assests/img/ghitar.png" alt="">
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar-favorite">
+                <p class="sidebar-favorite__title">Favorite Artists</p>
+
+                <div class="sidebar-favorite__list">
+                    <div class="list-avt">
+                        <img src="./assests/img/jack.jpg" alt="">
+                    </div>                   
+                    <div class="list-info">
+                        <h4 class="list-info__name">Jack</h4>
+                        <p class="list-info__song">2 songs in library</p>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <div class="sidebar-favorite__list">
+                    <div class="list-avt">
+                        <img src="./assests/img/sontung.jpg" alt="">
+                    </div>                   
+                    <div class="list-info">
+                        <h4 class="list-info__name">Sơn Tùng</h4>
+                        <p class="list-info__song">3 songs in library</p>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+            <div class="sidebar-album">
+                <div class="sidebar-album__suggest">
+                    <div class="sidebar-album__suggest-img">
+                        <img src="./assests/img/suggest.jpg" alt="">
+                    </div>
+                    <div class="sidebar-album__suggest-content">
+                        <div class="sidebar-album__suggest-info">
+                            <h4>Muộn rồi mà sao còn</h4>
+                            <p>Sơn Tùng MTP</p>
+                        </div>
+                        <i class="far fa-plus-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./assests/main.js"></script>
+</body>
+</html>
